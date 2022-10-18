@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iCELL</title>
+
+    <!-- STYLES -->
+
+    <link rel="shortcut icon" href="./IMG/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- BOOTSTRAP -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css" integrity="sha512-5PV92qsds/16vyYIJo3T/As4m2d8b6oWYfoqV+vtizRB6KhF1F9kYzWzQmsO6T3z3QG2Xdhrx7FQ+5R1LiQdUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+
+    <!-- SCRIPT JS -->
+
+    <script src="./JS/script.js" defer></script>
+
+
+</head>
+<body>
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
+        <div class="container py-3">
+            <a href="#" class="navbar-brand">
+                <h1>iCELL</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbar-items"
+            aria-controls="#navbar-items"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+
+
+            <i class="bi bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-items">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active primary-color" aria-current="page">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="aparelhos.html" class="nav-link primary-color">SHOP</a>
+                </li>
+                <div class="dropdown">
+                    <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown">
+                        Aparelhos
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">iPhone</a></li>
+                        <li><a href="#" class="dropdown-item">Motorola</a></li>
+                        <li><a href="#" class="dropdown-item">Samsung</a></li>
+                        <li><a href="#" class="dropdown-item">Xiaomi</a></li>
+                    </ul>
+                </div>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <!-- SLIDER -->
+
+    <div class="container" id="slider-container">
+        <div class="carousel slide " id="slider"
+         data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button 
+            class="active" 
+            data-bs-target="#slider"
+            data-bs-slide-to="0"
+            aria-current="true"
+            aria-label="Slide 1"
+            ></button>
+            <button 
+            class="active" 
+            data-bs-target="#slider"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+            ></button>
+            <button 
+            class="active" 
+            data-bs-target="#slider"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+            ></button>
+            <button 
+            class="active" 
+            data-bs-target="#slider"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+            ></button>
+        </div>
+        <div class="carousel-inner hide">
+            <div class="carousel-item active">
+                <img src="./IMG/ip13.jpg" 
+                alt="ip13" 
+                class="d-flex w-100">
+                <div class="carousel-caption">
+                    <h5>iPhone</h5>
+                    <a onclick="clicou()" 
+                    href="aparelhos.html" 
+                    class="btn btn-dark bti" 
+                    id="bti" >Comprar</a>
+                </div>
+            </div>
+        <div class="carousel-inner">
+            <div class="carousel-item">
+                <img src="./IMG/motos.jpg" alt="moto" class="d-flex w-100">
+                <div class="carousel-caption">
+                    <h5>Motorola</h5>
+                    <a href="aparelhos.html" class="btn btn-dark btm">Comprar</a>
+                </div>
+            </div>
+        <div class="carousel-inner">
+            <div class="carousel-item">
+                <img src="./IMG/sam.jpg" alt="ip13" class="d-flex w-100">
+                <div class="carousel-caption">
+                    <h5>Samsung</h5>
+                    <a href="aparelhos.html" class="btn btn-dark bts">Comprar</a>
+                </div>
+            </div>
+        <div class="carousel-inner">
+            <div class="carousel-item">
+                <img src="./IMG/xiaomi.jpg" alt="xiaomi" class="d-flex w-100">
+                <div class="carousel-caption">
+                    <h5>Xiaomi</h5>
+                    <a href="aparelhos.html" class="btn btn-dark btx">Comprar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+        <button 
+        class="carousel-control-prev" 
+        type="button" 
+        data-bs-target="#slider"
+        data-bs-slide="prev"
+        >
+        <i class="bi bi-chevron-compact-left"></i>
+        <span class="visually-hidden">Previous</span>
+    </button>
+        <button 
+        class="carousel-control-next" 
+        type="button" 
+        data-bs-target="#slider"
+        data-bs-slide="next"
+        >
+        <i class="bi bi-chevron-compact-right"></i>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+</div>
+</div>
+<!-- FOOTER TOP -->
+<footer class="container-fluid bg-dark-color" id="footer">
+    <div class="containers">
+    <div class="col-12" id="footer-top">
+        <div class="row justify-content-between">
+            <div class="col-4"><h2>iCELL</h2></div>
+            <div class="col-4" id="social-icons">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-youtube"></i>
+                <i class="bi bi-twitter"></i>
+            </div>
+        </div>
+    </div>
+    <div class="col-12" id="footer-details">
+        <div class="row">
+            <div class="col-12 col-md-4" id="news-container">
+                <h4>Fique por dentro das novidades:</h4>
+                <form>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Digite seu email">
+                    </div>
+                    <button class="btn btn-dark" type="submit">ENVIAR</button>
+                </form>
+            </div>
+            <div class="col-12 col-md-4" id="contact-container">
+                <h4>Formas de contato</h4>
+                <p class="secondary-color">icell@gmail.com</p>
+                <p class="secondary-color">(32) 90002-9882</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12" id="footer-bottom"></div>
+</footer>
+</body>
+</html>
